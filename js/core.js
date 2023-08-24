@@ -115,6 +115,8 @@ class CanvasComponent extends Component {
             drawFunction(this.context);
         }
 
+        if(this.onUpdate) this.onUpdate()
+
         requestAnimationFrame(() => this.loop());
     }
 
