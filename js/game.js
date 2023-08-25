@@ -11,8 +11,7 @@ const player = {
 };
 
 const canvas = new CanvasComponent('canvas');
-canvas.element.width = 500
-canvas.element.height = 300
+canvas.size(500,300)
 addComponentToBody(canvas);
 
 //adds key press detection into the DOM
